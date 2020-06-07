@@ -18,7 +18,7 @@
     background-color: #712B42;
   }
   .negro{
-    background-color: #0C0910;
+    background-color:#0C0910 ;
   }
   .beige{
     background-color: #DAC9C1;
@@ -63,7 +63,6 @@
   
   
   
-  
    /* ## login ## */
   
   .fa-sign-in-alt {
@@ -83,6 +82,12 @@
   .container-fluid {
 
     background-color: #DAC9C1;
+    
+}
+
+#home{
+  padding-left: 3px;
+  padding-right: 3px;
 }
   a{
       color: #712B42;
@@ -487,4 +492,17 @@
 
   }
 
- 
+ /*.............carrtio--------------*/
+  
+ #formCarrito{
+
+  position: relative;
+  right:50px
+ }
+
+ #comprar
+ {
+  margin: 20px;
+  padding:5px;
+  
+ }
