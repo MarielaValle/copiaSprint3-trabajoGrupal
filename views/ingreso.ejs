@@ -1,76 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Wine Store</title>
-</head>
 
-<body class="body-home">
-    <!--   ## Bloque Barra Principal  -->
-    <div class="bloqueBarraPrincipal">
-        <div class="barraPrincipal">
-            <ul class="barraIzquierda">
-                <li class="li-barra">
-                    <img class="logo" src="img/logo.png">
-                </li>
-                <li class="li-barra">
-                    <a href="home.html">HOME</a>
-                </li>
-                <li class="li-barra">
-                    <a href="productos.html">PRODUCTOS</a>
-                </li>
-                <li class="li-barra">
-                    <a href="#formulario-contacto">CONTACTO</a>
-                </li>
-            </ul>
-            <ul class="barraDerecha">
-                <li class="li-barra">
-                    <a href="ingreso.html">INGRESAR</a></li>
-                <li class="li-barra">
-                    <a href="registro.html">REGISTRARSE</a>
-                </li>
-                <li class="li-barra">
-                    <img class="carrito" src="img/carrito.jpg">
-                </li>
-            </ul>
-        </div>
-    </div>
+
+    <%- include('./partials/head.ejs')%>
+   
+<body >
+    
+  <%- include('./partials/header.ejs')%>
     <!-- Fin Menu------------------------------------------------------------>
 
-    <!-- Formulario de Ingreso -------------------------------------->
-    <section class='ingresoForm'>
-        <div class="d-left">
-            <div class="d-block">
-                <h3>Ingresar</h3>
-                <div class="block-tittle">
+    <div class='container-fluid' id='registroC' >
+        <div class='row' id='form'>
+            <div class="sm-col-4 md-col-12 lg-col-8" id="registro">
+                   
+                      <h3 class="ingresar">Ingresar<i class="fas fa-sign-in-alt"></i></h3>
+                      
+                      <p id="login">¿No estás registrado?<a href='#'>registrate aquí</a></p>
+      
+                      
+                      <form action='#'method='post' > 
+                          
+                          
+                          
+                          <p><label for='email'>Email</label></p>
+                          <p><input type='email' name='email' id='email'   class='uno'></p>
+                          
+                          
+                          <p><label for='nombre'>Contraseña</label></p>
+                          <p> <input type='text' name='contraseña' id='nombre' class='uno'></p> 
+                         
+                          
+                          
+                          <p id='btn-form'><button type="button" class="btn btn-primary">Enviar</button></p>
+                         
+                          
+                      </form>
+                 
+                 
+              </div>
+       </div> 
+      </div>
 
-                </div>
-                <form class='block-form' action="#" method="post" style='background-color:#777A8C'>
-                    <p><input type="email" class="item-form" name="user_mail" placeholder="Email"></p>
-                    <p><input type='password' class="item-form" name='contraseña' id='pass' placeholder="Contraseña" required></p>
 
-                    <p><button type='submit' class='ingresar'>Ingresar</button></p>
-                </form>
-            </div>
-        </div>
-    </section>
 
+
+
+    <!-------------------------------------------------------------------->
+  
+
+
+
+
+    
     <!-- Inicio Fotter---------------------------------------------------------->
-    <div class="footer" class="footer">
-        <div class="f-bloque-iz">
-            SEGUINOS EN
-            <img class="iconoFooter" src="iconos/facebookblanco64.png">
-            <img class="iconoFooter" src="iconos/instagramblanco64.png">
-        </div>
-        <div class="f-bloque-de">
-            Derechos Reservados a Wine Store -2020-
-        </div>
-    </div>
+    <%- include('./partials/footer.ejs')%>
+  
     <!-- Fin Fotter-------------------------------------------------------------->
+   
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 
 </html>
