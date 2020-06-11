@@ -6,7 +6,9 @@
   }
   
   body {
-   
+    
+    margin-left: auto;
+    margin-right: auto;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     
   }
@@ -73,10 +75,7 @@
   }
   
   /* ## MARIELA ## */
-  #btn-form{
-    position:relative;
-    left:60px
-  }
+  
   /* ## productos## */
   
   .container-fluid {
@@ -215,13 +214,13 @@
 
         /* ## Registro## */
 
-        .avatar{
-
-          position:relative;
-          right:50px;
-        }
-           
-            
+       
+ #form{
+   justify-content: center;
+ 
+  
+ }       
+     
 #registro{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -231,26 +230,24 @@
     border-color:  #712B42;
     border-radius: 5px;
     background-color: #DAC9C1;
-    padding-left: 100px
-
-}
-#form{
-  justify-content: center;
-}
-
-.dos{
+    text-align: center;
+    
   
-  border:solid;
-  border-radius: 5px;
-  border-color: #712B42;
 }
+
+
+
+
+
+
 .uno{
  border:solid;
  border-radius: 5px;
  border-color: #712B42;
  height:7vh;
  width: 80%;
-
+ 
+ 
 
 }
        
@@ -338,11 +335,7 @@
         margin-left: 100px;
         
        }
-       #form{
-
-        text-align: left;
-        
-       }
+     
 
        #copa{
          position: relative;
